@@ -21,7 +21,8 @@ const AccountProgress = () => {
   ];
 
   return (
-    <StatCard title={<div className="text-center">Account Progress</div>}>
+    // <StatCard title={<div className="text-center">Account Progress</div>}>
+    <StatCard title="Account Progress">
       <div className="flex flex-col items-center pb-4">
         <ProgressCircle percentage={85} />
       </div>
