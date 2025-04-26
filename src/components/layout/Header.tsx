@@ -1,4 +1,3 @@
-// src/components/layout/Header.tsx
 import React, { useState } from "react";
 import { Menu, Settings, X } from "lucide-react";
 
@@ -55,7 +54,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-
+      {/* Mobile View Navbar */}
       {visible && (
         <div className="bg-white lg:hidden md:hidden p-4 shadow-md">
           <div className="bg-white">

@@ -91,9 +91,6 @@ const Sidebar = () => {
           ))}
         </ul>
 
-        {/* Divider */}
-        {/* <div className="my-2 border-b border-white/10"></div> */}
-
         {/* Secondary Navigation */}
         <ul>
           {secondaryNavItems.map((item, idx) => (
