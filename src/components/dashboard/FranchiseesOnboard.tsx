@@ -51,7 +51,13 @@ const FranchiseesOnboard = () => {
       </div>
       {/* <Image src="/border.svg" alt="Border" /> */}
       <div className="items-center justify-center ">
-        <img src="/border.svg" alt="Border" className="w-full mt-3 mb-3" />
+        <img
+          src="/border.svg"
+          alt="Border"
+          width="600"
+          height="24"
+          className="w-full mt-3 mb-3"
+        />
       </div>
       {/* Progress bars for each stage */}
       <div className="space-y-4 mt-4">
