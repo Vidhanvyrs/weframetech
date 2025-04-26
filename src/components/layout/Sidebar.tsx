@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  Home,
-  Upload,
-  Settings,
-  ListCheck,
-  User,
-  LogOut,
-  ArrowLeft,
-} from "lucide-react";
+import { Home, Upload, Settings, ListCheck, User, LogOut } from "lucide-react";
 
 /**
  * Sidebar component for navigation and branding
@@ -73,11 +65,6 @@ const Sidebar = () => {
         "md:flex lg:flex bg-[#175d7d] text-white w-64 min-h-screen flex-col fixed left-0 top-0 z-10 md:relative md:translate-x-0 transition-transform duration-300 ease-in-out"
       }
     >
-      {/* Back button for mobile */}
-      <button className="absolute right-4 top-5 text-white hover:text-gray-300 transition-colors">
-        <ArrowLeft size={24} />
-      </button>
-
       {/* Logo area */}
       <div className="p-4 border-b border-white/10">
         <h1 className="text-xl font-bold">Franchise Portal</h1>
@@ -113,9 +100,9 @@ const Sidebar = () => {
             <li key={idx}>
               <Link
                 to={item.path}
-                onClick={() => setActiveIndex(idx + 5)}
+                onClick={() => setActiveIndex(idx)}
                 className={`flex items-center justify-between ${
-                  item.active && idx + 5 === activeIndex
+                  item.active && idx === activeIndex
                     ? "bg-[#456e82] text-[#2fbbfd]"
                     : "text-[#95b3c0]"
                 } px-6 py-3 hover:bg-dashboard-sidebarHover transition-colors duration-150`}

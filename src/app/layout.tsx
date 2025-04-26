@@ -1,4 +1,3 @@
-
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
@@ -26,9 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <QueryClientProvider client={queryClient}>
           <TooltipProvider>
-            <main className="min-h-screen bg-gray-50">
-              {children}
-            </main>
+            <main className="min-h-screen bg-gray-50">{children}</main>
             <Toaster />
             <Sonner />
           </TooltipProvider>
